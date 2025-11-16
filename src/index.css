@@ -105,7 +105,7 @@ p {
     padding: 20px 30px;
 }
 
-.header .navbar::after{
+.header .navbar::after {
     content: "";
     position: absolute;
     width: 50%;
@@ -190,17 +190,65 @@ p {
     background-color: var(--sky-blue);
 }
 
-/*? Small Screens */
+/*؟ Small Screens (Mobile) */
 @media (max-width: 768px) {
+    .header .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #000;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    \ .navbar .menu-btn {
+        display: block;
+        cursor: pointer;
+        font-size: 26px;
+        color: #fff;
+    }
+
+    .navbar .account {
+        display: none;
+    }
 }
 
-/*? Medium Screens  */
+/*? Medium Screens */
 @media (min-width: 769px) and (max-width: 992px) {
+    .header .navbar {
+        padding: 15px 25px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .navbar .account .btn-login,
+    .navbar .account .btn-join {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
 }
 
-/*? Large Screens  */
+/*? Large Screens */
 @media (min-width: 993px) {
+    .navbar .menu-btn {
+        display: none;
+    }
 }
+
 /*! Header End **/
 
 /** Main Section */
@@ -573,7 +621,7 @@ p {
 
 .join p {
     font-size: 14px;
-    max-width: 600px;
+    min-width: 90%;
     color: white;
 }
 
@@ -615,15 +663,15 @@ p {
 
 .footer-section-title {
     color: var(--dark-blue) !important;
-    font-size: 22px ;
+    font-size: 22px;
     font-weight: bolder;
 }
 
-.footer ul{
+.footer ul {
     margin: 10px 0;
 }
 
-.footer ul li{
+.footer ul li {
     padding: 3px 0;
 }
 
@@ -643,17 +691,17 @@ p {
     gap: 5px;
     margin: 15px 0;
     font-size: 20px;
-    color : var(--sky-blue)
+    color: var(--sky-blue);
 }
 
-.footer .copy-rights{
+.footer .copy-rights {
     margin-top: 20px;
     font-weight: 400;
     text-align: center;
 }
 
-.footer .copy-rights span{
+.footer .copy-rights span {
     font-weight: bold;
-    color: var(--sky-blue)
+    color: var(--sky-blue);
 }
 /*! Footer End **/
