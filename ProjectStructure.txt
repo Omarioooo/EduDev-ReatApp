@@ -1,0 +1,19 @@
+App Struct
+    - Header
+    - Main
+        - Home
+            - Card
+            - Card
+            - Card
+        - Courses
+            - Section header
+            - Course
+            - Course
+            - Course
+        - Reviews    
+            - Section header
+            - Review
+            - Review
+            - Review
+        - Join US
+    - Footer      
